@@ -1,10 +1,3 @@
-def max(list):
-    max = list[0]
-    for i in range(1, len(list)):
-        if list[i] > max:
-            max = list[i]
-    return max
-
 T = int(input())
 for t in range(1, T + 1):
     N, M = map(int, input().split())
@@ -19,9 +12,7 @@ for t in range(1, T + 1):
                 break
             for i in range(len(A)):
                 multi_list.append(A[i] * B[i])
-        #     print(multi_list)
             total = sum(multi_list)
-        #     print(total)
             if total > max_list:
                 max_list = total
             multi_list = []
@@ -34,9 +25,7 @@ for t in range(1, T + 1):
                 break
             for i in range(len(B)):
                 multi_list.append(A[i] * B[i])
-        #     print(multi_list)
             total = sum(multi_list)
-        #     print(total)
             if total > max_list:
                 max_list = total
             multi_list = []
