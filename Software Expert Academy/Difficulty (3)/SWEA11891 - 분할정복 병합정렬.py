@@ -46,12 +46,10 @@ def merge(group1, group2):
 
     return result
 
-
 T = int(input())
 for t in range(1, T+1):
     N = int(input())
     lst = list(map(int, input().split()))
     cnt = 0
     arr = sorting(lst)
-
     print(f'#{t} {arr[N//2]} {cnt}')
